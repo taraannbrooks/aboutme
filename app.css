@@ -1,0 +1,299 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+/* .wrapper{ */
+    /* min-height: 100%; */
+    /* margin-bottom: -50px; */
+/* } */
+body{
+    background-color:#F8EFD3;
+    overflow: auto;
+}
+
+h1{
+    font-family: alverata-irregular, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    margin-left: 10%;
+    margin-top: 85px;
+    margin-left: 50%;
+    margin-right: 5%;
+}
+
+#secondline {
+    text-decoration: underline;
+    margin-top: 0;
+    margin-left: 50%;
+}
+
+h2 {
+    font-family: alverata-irregular, serif;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 50%;
+    margin-top: 50px;
+    line-height: 35px;
+    margin-right: 5%;
+}
+
+#cardHeader{
+    font-family: alverata-irregular, serif;
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+}
+
+#headshot{
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 600px;
+    float: left;
+    padding-right: 5%;
+    overflow: auto;
+}
+
+#logo{
+  margin-left: 10%;
+    width: 199px;
+  height: 126.17px;
+  display: inline;
+ }
+
+ul {
+    float: right;
+    margin-right: 7%;
+    margin-top: 60px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    margin: 20px;
+    font-family: gotham, sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+
+#secondline {
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+
+.flexContainer{
+    display:flex;
+    flex-direction:row;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.insideDiv{
+    width: 33%;
+    margin: 0;
+    padding: 20px;
+
+} 
+
+p{
+    margin-top: 15px;
+    font-family: gotham, sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.bio{
+    margin-left: 50%;
+    margin-right: 5%;
+}
+button{
+    background-color:#F8EFD3;
+    font-family: gotham, sans-serif;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 12px 35px;
+    margin-left: 50%;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    border: 2px solid #231F20;
+    }
+    
+    button:hover{
+        background-color: #231F20;
+        color: #F8EFD3;
+    }
+    
+    button:focus {
+        outline: none;
+    }
+
+h3 {
+    text-align: center;
+    font-family: gotham, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;    
+    font-size: medium;
+    margin: 45px 15px 15px 0px;
+}
+
+.centeredImage {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.mySkillsP {
+    margin: 15px 15px 15px 0px;
+}
+
+/* navigation animations */
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  li {
+    display: inline-block;
+    position: relative;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+  
+  li:after {
+    content: '';
+    display: block;
+    margin: 3px auto auto auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+  }
+  
+  li:hover:after {
+    width: 100%;
+    background: #000;
+  }
+
+  /* FooterCSS */
+  #footerlogo {
+    display: inline;
+    margin-left: 117px;
+    width: 6%;
+    margin-top: 40px;
+    align-items: baseline;
+}
+
+.footer {
+    background-color: #231F20;
+    height: 120px;
+    width: 100%;
+}
+
+#footernav {
+    margin-top: 20px;
+}
+
+.footerinline{
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+hr{
+    border-top: 1px solid #FBC6B9;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+
+
+@media screen and (max-width: 915px) {
+    #navlist {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    h1 {
+        font-size: 35px;
+    }
+    #logo {
+        width: 116px;
+        height: 73.8px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    section {
+    overflow: auto;
+}
+}
+
+@media screen and (max-width: 1458px) {
+    #headshot {
+    width: 400px;  
+    }
+    
+}
+
+@media screen and (max-width: 1133px) {
+    h1, #secondline {
+        font-size: 3rem;
+        margin-left: 10%;
+}
+    .bio{
+        margin-top: 50px;
+}
+    h2, .bio, button {
+        margin-left: 10%;
+}
+    
+}
+
+@media screen and (max-width: 725px){
+    .flexContainer{
+        flex-direction: column;    
+}
+}
+
+@media screen and (max-width: 725px){
+    .insideDiv{
+        width: 100%;
+            
+}
+#headshot {
+    padding-bottom: 25px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+h1, #secondline {
+    font-size: 3rem;
+    margin-left: 10%;
+}
+h2, .bio, button {
+    margin-left: 10%;
+}
+}
+
+@media screen and (max-width: 380px) {
+    h1, #secondline {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
